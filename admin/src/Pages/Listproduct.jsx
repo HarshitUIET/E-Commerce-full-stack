@@ -39,10 +39,10 @@ export const Listproduct = () => {
         <p>Category</p>
         <p>Remove</p>
       </div>
-      <div className=' mt-6' >
+      <div className=' ml-4 mt-6' >
         <hr/>
         {allProduct.map((product,index)=>{
-           return <div className=' gap-x-40 grid grid-cols-6 py-5' key={index}>
+           return <div className=' ml-4 gap-x-4 grid grid-cols-6 py-5' key={index}>
                <img className='h-[60px] ' src={product.image} alt=''/>
                <p>{product.name}</p>
                <p>{product.old_price}</p>

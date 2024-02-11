@@ -105,7 +105,7 @@ export const Addproduct = () => {
             <input value={productDetails.image}   onChange={imageHandler} type='file' name='image' id='file-input'
              hidden/>
         </div>
-        <button onClick={AddHandler}  className=' mt-4 h-[40px] w-[120px] bg-blue-500 rounded-md text-white'>ADD</button>
+        <button onClick={AddHandler}  className=' mt-4 mb-5 h-[40px] w-[120px] bg-blue-500 rounded-md text-white'>ADD</button>
        </div>
     </div>
   )

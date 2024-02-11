@@ -5,7 +5,7 @@ import list_product from '../Assets/Product_list_icon.svg'
 
 export const Sidebar = () => {
     return (
-        <div className=' flex flex-col items-center h-screen w-[250px] bg-white shadow-lg shadow-slate-200'>
+        <div className=' flex flex-col items-center w-[250px] bg-white shadow-lg shadow-slate-200'>
           <div className=' mt-5'>
           <Link to={'/addproduct'} >
                 <div className=' flex py-3 px-4 w-[190px] rounded-md my-3 bg-slate-500'>
