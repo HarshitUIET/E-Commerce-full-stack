@@ -38,7 +38,7 @@ app.get("/",(req,res)=>{
 app.post("/upload",upload.single('products'),(req,res)=>{
     res.json({
         success : 1,
-        image_url : `http://localhost:${port}/images/${req.file.filename}`
+        image_url : `https://e-commerce-full-stack-1-n87b.onrender.com/images/${req.file.filename}`
     })
 })
 
