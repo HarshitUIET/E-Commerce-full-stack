@@ -14,7 +14,7 @@ app.use(cors());
 
 app.use("/images",express.static('upload/images'));
 
-mongoose.connect("mongodb://0.0.0.0:27017/e-commerce")
+mongoose.connect("mongodb+srv://harshitpachauri76:DNGDwRayYKi1c2Fy@cluster0.2r9fwma.mongodb.net/ecommercedb")
 .then(()=>{
     console.log("Connection Success");
 })
