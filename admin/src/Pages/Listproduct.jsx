@@ -7,12 +7,12 @@ export const Listproduct = () => {
   const [allProduct,setAllproduct] = useState([]);
 
   const fetcInfo = async () => {
-      const res = await axios.get("http://localhost:4000/allproducts");
+      const res = await axios.get("https://e-commerce-full-stack-1-n87b.onrender.com/allproducts");
       setAllproduct(res.data);
   }
 
   const removeHandler = async (id) => {
-       const res = await fetch("http://localhost:4000/removeproduct",{
+       const res = await fetch("https://e-commerce-full-stack-1-n87b.onrender.com/removeproduct",{
         method:"POST",
         headers:{
           Accept:"application/json",

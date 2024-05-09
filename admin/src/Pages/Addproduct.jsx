@@ -35,7 +35,7 @@ export const Addproduct = () => {
             let formData = new FormData();
             formData.append('products', image);
     
-            const response = await fetch("http://localhost:4000/upload", {
+            const response = await fetch("https://e-commerce-full-stack-1-n87b.onrender.com/upload", {
                 method: "POST",
                 Accept:"application/json",
                 body: formData,
@@ -51,7 +51,7 @@ export const Addproduct = () => {
                 product.image = responseData.image_url;
                 console.log(product);
                  
-               const anotherRes = await axios.post("http://localhost:4000/addproduct",product)
+               const anotherRes = await axios.post("https://e-commerce-full-stack-1-n87b.onrender.com/addproduct",product)
 
                  console.log(anotherRes.data);
 

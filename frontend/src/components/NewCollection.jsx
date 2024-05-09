@@ -6,7 +6,7 @@ export const NewCollection = () => {
   const [new_collection,setnewcollection] = useState([]);
 
   useEffect(()=>{
-    fetch("http://localhost:4000/newcollection")
+    fetch("https://e-commerce-full-stack-1-n87b.onrender.com/newcollection")
     .then((res)=>res.json()).then((data)=>setnewcollection(data))
   },[])
 

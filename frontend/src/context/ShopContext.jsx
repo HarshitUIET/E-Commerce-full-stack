@@ -12,11 +12,11 @@ const ShopContextProvider = (props) => {
 
    useEffect(()=>{
 
-        fetch("http://localhost:4000/allproducts")
+        fetch("https://e-commerce-full-stack-1-n87b.onrender.com/allproducts")
         .then((res)=>res.json()).then((data)=>setAllproduct(data))
 
       if(localStorage.getItem('auth-token')) {
-         fetch("http://localhost:4000/getcart",{
+         fetch("https://e-commerce-full-stack-1-n87b.onrender.com/getcart",{
             method:"POST",
             headers:{
                Accept:"application/json",
@@ -75,7 +75,7 @@ const ShopContextProvider = (props) => {
       toast.success("Items Added to Cart");
        
       if(localStorage.getItem('auth-token')) {
-         fetch("http://localhost:4000/addtocart",{
+         fetch("https://e-commerce-full-stack-1-n87b.onrender.com/addtocart",{
          method:"POST",
          headers:{
             Accept:"application/json",
@@ -100,7 +100,7 @@ const ShopContextProvider = (props) => {
       }))
       toast.error("Item removed from Cart");
       if(localStorage.getItem('auth-token')) {
-         fetch("http://localhost:4000/removecart",{
+         fetch("https://e-commerce-full-stack-1-n87b.onrender.com/removecart",{
          method:"POST",
          headers:{
             Accept:"application/json",
