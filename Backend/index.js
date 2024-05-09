@@ -16,7 +16,7 @@ app.use("/images",express.static('upload/images'));
 
 mongoose.connect("mongodb+srv://harshitpachauri76:DNGDwRayYKi1c2Fy@cluster0.2r9fwma.mongodb.net/ecommercedb")
 .then(()=>{
-    console.log("Connection Success");
+    console.log("Connection Success ekdum");
 })
 .catch((error)=>{
     console.log("Error found in connection ",error);
